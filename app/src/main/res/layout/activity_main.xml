@@ -17,9 +17,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/custom_color_1"
+        android:alpha="0.2"
         app:cornerRadius="20dp"
-        />
+        android:backgroundTint="@color/custom_color_1"
+        android:shadowColor="@color/black"/>
 
     <Button
         android:id="@+id/button"
@@ -29,9 +30,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/appCompatButton"
         app:layout_constraintStart_toStartOf="parent"
-        android:backgroundTint="@color/custom_color_1"
+        android:layout_marginBottom="40dp"
         app:cornerRadius="20dp"
-        />
+        android:alpha="0.5"
+        android:backgroundTint="@color/custom_color_1"/>
 
 
     <androidx.appcompat.widget.AppCompatButton
@@ -39,12 +41,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
         android:text="AppCompatBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button"
-        android:backgroundTint="@color/custom_color_1"
-        />
+        android:backgroundTint="@color/custom_color_1"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
