@@ -11,5 +11,10 @@
     <color name="custom_color_2">#005066</color>
     <color name="custom_color_3">#AAFDCC</color>
     <color name="custom_color_4">#BC41FF</color>
+    <color name="main_text_color">#080740</color>
+    <color name="main_text_color_with_opacity">#80080740</color>
+    <color name="dark_grey">#a9a9a9</color>
+    <color name="broken_white">#E5E5EC</color>
+    <color name="button_bg_gray">#E8E8F2</color>
 
 </resources>

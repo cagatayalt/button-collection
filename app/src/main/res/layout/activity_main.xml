@@ -21,6 +21,63 @@
         app:cornerRadius="20dp"
         android:backgroundTint="@color/custom_color_1"
         android:shadowColor="@color/black"/>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/feedButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:cornerRadius="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:background="@drawable/feed_button_style"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            android:id="@+id/feedBtnTv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Create Your"
+            android:textAlignment="textEnd"
+            android:paddingVertical="16dp"
+            android:paddingEnd="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/main_text_color"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/feedBtnTv2"
+            />
+        <TextView
+            android:id="@+id/feedBtnTv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom Art"
+            android:textAlignment="textStart"
+            android:paddingStart="10dp"
+            android:paddingVertical="16dp"
+            android:textAllCaps="false"
+            android:textColor="@color/main_text_color"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/feedBtnTv1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
     <Button
         android:id="@+id/button"
@@ -47,6 +104,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button"
         android:backgroundTint="@color/custom_color_1"/>
+    
+    
+    
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
